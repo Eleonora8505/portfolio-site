@@ -1,15 +1,14 @@
 /*
 Colors used:
-Primary Color (Blue): #05676e;
-Secondary Color (Green): #489c79;
+Background Color (Purple): #E7E0EA
 */
 body {
-  background-color: #ffffff;
+  background-color: #E7E0EA;
   font-family: 'Lato', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #09010D;
 }
 
 h1, h2, h3, h4 {
@@ -35,4 +34,22 @@ h4 {
 }
 img {
   width: 100%;
+}
+/*MANTENER LA SIGUIENTE SECCIÓN SIEMPRE HASTA ABAJO PARA Q NO SEA OVERWRITTEN BY OTHER SPECIFIC RULES*/
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #3377FF;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #3D475B; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.6; /* Reduces the opacity of the button to 60% */
+  text-decoration: none;
+}
+.button:active {
+  background-color:#513D5B;
 }
