@@ -2,6 +2,9 @@
 Colors used:
 Background Color (Purple): #E7E0EA
 */
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: #E7E0EA;
   font-family: 'Lato', sans-serif;
@@ -9,6 +12,17 @@ body {
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #09010D;
+}
+header {
+  background-color: #E6C0DA;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  margin: 0px auto;
+  position: relative;
+  width: 0 auto;
+  border-bottom: 3px solid #4a4a4a
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
