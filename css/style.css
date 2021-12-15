@@ -70,3 +70,7 @@ a:focus {
   color: black;
   background-color: green;
 }
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
