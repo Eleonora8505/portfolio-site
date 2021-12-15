@@ -24,6 +24,9 @@ header {
   width: 0 auto;
   border-bottom: 3px solid #4a4a4a
 }
+#hero h1 {
+  text-align: center; /* Centers text */
+}
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
