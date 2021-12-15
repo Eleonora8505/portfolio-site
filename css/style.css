@@ -2,27 +2,28 @@
 Colors used:
 Background Color (Purple): #E7E0EA
 */
-*{
+* {
   box-sizing: border-box;
 }
 body {
-  background-color: #E7E0EA;
-  font-family: 'Lato', sans-serif;
+  background-color: #e7e0ea;
+  font-family: "Lato", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #09010D;
+  color: #09010d;
 }
 header {
-  background-color: #E6C0DA;
+  background-color: #e6c0da;
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 15px;
   padding-left: 20px;
   margin: 0px auto;
-  position: relative;
-  width: 0 auto;
-  border-bottom: 3px solid #4a4a4a
+  border-bottom: 3px solid #4a4a4a;
+  position: fixed;
+  width: 100%;
+  top: -10px;
 }
 #hero h1 {
   text-align: center; /* Centers text */
@@ -30,7 +31,10 @@ header {
 img {
   width: 100%;
 }
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 h1 {
@@ -44,11 +48,12 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  color: green
+  color: green;
 }
 h4 {
   font-size: 1.25em;
   font-weight: 400;
+}
 img {
   width: 100%;
 }
@@ -63,17 +68,21 @@ a:focus {
 }
 .button {
 }
-.btn-default{
+.btn-default {
   border-radius: 3px;
   text-decoration: none;
   color: black;
   background-color: green;
 }
-.button:active{
+.button:active {
   color: black;
   background-color: green;
 }
 /* Layout styling */
 .container {
   padding: 0 15px;
+}
+
+.logo {
+  max-width: 200px;
 }
