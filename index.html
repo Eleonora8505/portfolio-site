@@ -22,20 +22,21 @@
 
 <body>
   <header>
-    <div>
-      <img src="img/logobuttefly.png" alt="Eleonora Logo" class="logo">
+    <div id="header" class="container">
+      <img class="logo" src="img/logobuttefly.png" alt="Eleonora Logo">
     </div>
     <div><nav>
         <ul><h3>
-          <li><a href="index.html">Projects</a></li>
+          <li><a href="postersinc.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul></h3>
+        </h3></ul>
       </nav></div>
   </header>
   <main>
-    <div>
       <!--hero-->
+    <div id="hero">
+      <div class="container">
       <h1>Eleonora - UI Designer
       </h1>
       <p>
@@ -46,20 +47,16 @@
             My motivation on the fild is to explore how the Digital Design can be use for social causes, such as
             inclusion.
       </h4></span></p>
-    </div>
       <!-- Button Read More-->
-      <div>
         <a href="about.html" class="button btn-default">
           <button href="about.html">Read More</button>
         </a>
       </div>
-      <div>
-        <!--Section my work-->
-        <h2>My work</h2>
-      </div>
-      <div>
-        <!--open row that holds 2 columns for my Projects-->
-        <div>
+      <!--Section my work-->
+      <div id="work">
+      <div class= "container">
+        <h2>My Work</h2>
+          <div class="row"><!--open row that holds 2 columns for my Projects-->
           <!--open first column (used for image)-->
           <picture>
             <source srcset="img/postersinc/postersinc@1.png" media="(max-width:767px)">
@@ -67,7 +64,8 @@
           </picture>
         </div>
         <!-- end first column -->
-        <div>
+        <div class="container">
+          <div class="row">
           <!-- open second column (used for text)-->
           <h3> Posters Inc </h3>
           <h4>
@@ -80,20 +78,14 @@
             Designed with Figma
           </p>
           <h4><a href="Postersinc.html">Open Project</a>
-        </div>
         <!-- end second column -->
-      </div>
       <!-- end row that holds (2) columns for project-->
-      <div>
         <!-- open row that holds 2 columns for my Projects-->
-        <div>
           <!--open first column (used for image)-->
           <picture>
             <source srcset="img/odluka/odluka@1.png" media="(max-width:767px)">
             <img src="img/odluka/odluka@1.png" alt="Odluka">
           </picture>
-        </div>
-        <div>
           <!--open second column (used for text)-->
           <h3> Odluka. The Decision Maker </h3>
           <p>
@@ -109,15 +101,15 @@
       </div>
       <!--end row that holds (2) columns for project-->
    </main>
-  <footer id="Contact">
+  <footer class="container" id="Contact">
     <div>
       <h2>Get in Touch</h2>
-          <p>
+          <h4><p>
             Do you like my work and want to discuss new ideas? Please get in touch.</p>
           Call <a href="tel:+4915758813333">+49 157 5881 3333</a>.
             <p>Prefer sending an email?
               <a href="mailto:eleonora.silva.gutierrez@gmail.com">Email me</a>
-            </p>
+            </p></h4>
     </div>
     <div>
       <!-- Social Media Layout and Placeholders -->

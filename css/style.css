@@ -3,30 +3,72 @@ Colors used:
 Background Color (Purple): #E7E0EA
 */
 * {
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
 }
+
 body {
   background-color: #e7e0ea;
   font-family: "Lato", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #09010d;
 }
+
+nav{
+  background: none;
+  height: auto;
+  width: 100%;
+  padding: inherit;
+  margin: auto;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
 header {
+  position: fixed;
+  height: auto;
   background-color: #e6c0da;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-left: 20px;
   margin: 0px auto;
   border-bottom: 2px solid #4a4a4a;
-  position: relative;
   width: 100%;
   top: -10px;
+  text-align: center;
+  display: inline-block;
 }
+
+main {
+  padding-top: 400px;
+}
+/* Change the link color to #6e6e6e on hover */
+li a:hover {
+  background-color: ##6e6e6e;
+}
+
 #hero h1 {
   text-align: center; /* Centers text */
+  padding-left: 10px;
+  position: static;
 }
 img {
   width: 100%;
@@ -66,6 +108,11 @@ a:focus {
   color: #cc6540;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
+
+.container {
+  padding: 0 20px;
+}
+
 .button {
 }
 .btn-default {
@@ -79,10 +126,15 @@ a:focus {
   background-color: green;
 }
 /* Layout styling */
-.container {
-  padding: 0 15px;
+
+.row {
+  margin: 10px 0; /* 25px top and bottom, 0 left and right */
 }
 
-.logo {
-  max-width: 200px;
+#work .row{
+  padding-bottom: -2px;
+}
+
+
+  color: #4a4a4a;
 }
