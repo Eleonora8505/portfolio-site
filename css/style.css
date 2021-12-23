@@ -16,7 +16,7 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 }
 
-nav{
+nav {
   background: none;
   height: auto;
   width: 100%;
@@ -71,7 +71,11 @@ main {
 }
 /* Change the link color to #6e6e6e on hover */
 li a:hover {
-  background-color: ##6e6e6e;
+  background-color: #6e6e6e;
+}
+
+#hero {
+  background-color: #450531;
 }
 
 #hero h1 {
@@ -150,11 +154,17 @@ a:focus {
   margin: 20px;
 }
 
+/* HERO section style starts here */
+.paragraph-style {
+  background-color: #053715;
+}
+/* HERO section style ends */
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  header{
+  header {
     text-align: unset;
     float: right;
   }
@@ -166,8 +176,8 @@ Medium devices (640px and larger)
   }
 
   #hero span {
-  display: block;
-}
+    display: block;
+  }
 }
 
 /* ==============================
