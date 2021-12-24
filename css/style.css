@@ -16,47 +16,13 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 }
 
-nav {
-  background: none;
-  height: auto;
-  width: 100%;
-  padding: inherit;
-  margin: 0 auto;
-}
-
-.logo {
-  max-width: 250px;
-}
-
-nav > ul {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-  display: inline-block;
-}
-
 header {
   position: fixed;
   height: auto;
   background-color: #e6c0da;
   padding-top: 10px;
   padding-right: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   padding-left: 20px;
   margin: 0px auto;
   border-bottom: 2px solid #4a4a4a;
@@ -66,23 +32,56 @@ header {
   display: inline-block;
 }
 
-main {
-  padding-top: 360px;
+.logo {
+  max-width: 250px;
+  float: center;
+  padding-top: 20px;
 }
+
+nav {
+  background: none;
+  height: auto;
+  width: 100%;
+  padding: inherit;
+  margin: auto;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: contents;
+  margin: 0;
+}
+
+/* HERO section style starts here */
+#hero {
+  background-color: none;
+  padding-bottom: 20px;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+  padding-top: 10px;
+  padding-left: 10px;
+  position: static;
+}
+.paragraph-style {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+main {
+  margin-left: 20px;
+  padding-top: 330px;
+}
+footer {
+  margin-left: 20px;
+}
+
 /* Change the link color to #6e6e6e on hover */
 li a:hover {
   background-color: #6e6e6e;
 }
 
-#hero {
-  background-color: #450531;
-}
-
-#hero h1 {
-  text-align: center; /* Centers text */
-  padding-left: 10px;
-  position: static;
-}
 img {
   width: 100%;
 }
@@ -92,6 +91,7 @@ h3,
 h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -113,6 +113,7 @@ h4 {
 img {
   width: 100%;
 }
+
 a {
   color: #271b81;
   text-decoration: none; /* No underlining */
@@ -127,21 +128,31 @@ a:focus {
 }
 .btn-default {
   border-radius: 3px;
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
-  background-color: green;
 }
 
 .button:active {
   color: black;
   background-color: green;
 }
-
-/* Layout styling */
-.container {
-  padding: 0 15px;
+.container{
+  padding-top: 0px;
 }
-
+/* ==============================
+Small devices (320px and larger)
+================================= */
+@media only screen and (max-width: 639px) {
+  header {
+    position: absolute;
+    align-items: center;
+    background-color: none;
+    text-align: center;
+    padding: 0px 0;
+}
+ul {
+  display: contents;
+}
 .row {
   margin: 10px 0; /* 25px top and bottom, 0 left and right */
 }
@@ -153,41 +164,4 @@ a:focus {
 #id {
   margin: 20px;
 }
-
-/* HERO section style starts here */
-.paragraph-style {
-  background-color: #053715;
-}
-/* HERO section style ends */
-
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    float: right;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
-  #hero span {
-    display: block;
-  }
-}
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
 }
