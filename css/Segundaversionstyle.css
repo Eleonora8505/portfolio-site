@@ -1,0 +1,49 @@
+
+
+/* general */
+
+ header {
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+
+header .logo .menu {
+  display: inline-block;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.hero{
+  position: relative;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+h1,h2,h3,h4,p {
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
