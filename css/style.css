@@ -16,20 +16,20 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 }
 
+/* ---------- HEADER ----------*/
 header {
-  position: fixed;
-  height: auto;
-  background-color: #e6c0da;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 0px;
-  padding-left: 20px;
-  margin: 0px auto;
-  border-bottom: 2px solid #4a4a4a;
-  width: 100%;
-  top: -10px;
-  text-align: center;
-  display: inline-block;
+	width: 100%
+  grid-area: header;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+header .logo {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
 }
 
 .logo {
@@ -38,32 +38,40 @@ header {
   padding-top: 20px;
 }
 
-nav {
-  background: none;
-  height: auto;
-  width: 100%;
-  padding: inherit;
-  margin: auto;
+.menu {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
 }
 
-nav > ul {
-  list-style-type: none;
-  display: contents;
-  margin: 0;
+.menu a {
+	padding: 10px;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: 16px;
+}
+
+.menu a:hover {
+	background: #000;
+	color: #fff;
 }
 
 /* HERO section style starts here */
-#hero {
-  background-color: none;
-  padding-bottom: 20px;
+.inicio{
+  text-align: left;
 }
 
-#hero h1 {
-  text-align: center; /* Centers text */
-  padding-top: 10px;
-  padding-left: 10px;
-  position: static;
+h1 {
+  text-align: center;
 }
+
 .paragraph-style {
   font-size: 1.25em;
   font-weight: 400;
@@ -71,7 +79,7 @@ nav > ul {
 
 main {
   margin-left: 20px;
-  padding-top: 330px;
+  padding-top: 20px;
 }
 footer {
   margin-left: 20px;
@@ -144,7 +152,8 @@ Small devices (320px and larger)
 ================================= */
 @media only screen and (max-width: 639px) {
   header {
-    position: absolute;
+    position: inherit;
+    width: 100%;
     align-items: center;
     background-color: none;
     text-align: center;
