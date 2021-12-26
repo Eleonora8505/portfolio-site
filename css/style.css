@@ -64,8 +64,9 @@ header .logo {
 }
 
 /* HERO section style starts here */
-.inicio{
+.inicio {
   text-align: left;
+  margin-top: 20px;
 }
 
 h1 {
@@ -147,6 +148,13 @@ a:focus {
 .container{
   padding-top: 0px;
 }
+
+.inicio .title {
+  margin-top: 30px;
+}
+
+
+
 /* ==============================
 Small devices (320px and larger)
 ================================= */
