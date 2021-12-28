@@ -11,7 +11,7 @@ Background Color (Purple): #E7E0EA
 body {
   background-color: #e7e0ea;
   font-family: "Lato", sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 14px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 }
@@ -22,13 +22,17 @@ header {
  background-color: white;
  width: 100%;
  height: auto;
- padding: 10px 0;
+}
+
+.box{
+position: absolute;
 }
 
 .logo {
   max-width: 250px;
   float: center;
   padding-top: 20px;
+  padding-left: 20px;
 }
 
 .menu {
@@ -69,18 +73,22 @@ h1 {
 .paragraph-style {
   font-size: 1.25em;
   font-weight: 400;
-  margin-right: 20px;
 }
 
 main {
-  margin-left: 20px;
-  padding-top: 20px;
+  padding: 30px 30px 0;
 }
+
 footer {
-  margin-left: 20px;
+  padding: 30px 30px 0;
 }
 
 /* Change the link color to #6e6e6e on hover */
+ul {
+display:flex;
+justify-content:center;
+width:100%;
+}
 li a:hover {
   background-color: #6e6e6e;
 }
@@ -88,11 +96,13 @@ li a:hover {
 img {
   width: 100%;
 }
+
 h1,
 h2,
 h3,
 h4 {
   line-height: 1.4;
+
 }
 
 h1 {
@@ -112,9 +122,6 @@ h3 {
 h4 {
   font-size: 1.25em;
   font-weight: 400;
-}
-img {
-  width: 100%;
 }
 
 a {
@@ -147,13 +154,20 @@ a:focus {
   margin-top: 30px;
 }
 
+header {
+  position:fixed;
+  top:0;
 
+}
 
 /* ==============================
 Small devices (320px and larger)
 ================================= */
 @media only screen and (max-width: 639px) {
-  header {
+  body {
+    font-size: 16px
+  }
+    header {
     position: inherit;
     width: 100%;
     align-items: center;
@@ -164,8 +178,19 @@ Small devices (320px and larger)
 ul {
   display: contents;
 }
+
+.hero span {
+  display: block;
+}
+
 .row {
   margin: 10px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #work .row {
@@ -175,4 +200,35 @@ ul {
 #id {
   margin: 20px;
 }
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.col-md-6 {
+  width: 50%;
+  float: left;
+}
+
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  main {
+    padding: 320px 30px 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }

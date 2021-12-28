@@ -1,49 +1,20 @@
 
 
-/* general */
-
  header {
-  position: relative;
-  margin: 0 auto;
-  background-color: white;
+  background-color: green;
   width: 100%;
-  height: auto;
-  padding: 10px 0;
-}
-
-header .logo .menu {
+  position: absolute;
   display: inline-block;
-}
-
-nav > ul {
-  list-style-type: none;
+  top: 0
+  left: 0;
   padding: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
-.hero{
+.presentation h1 {
+  background-color: black;
   position: relative;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
 }
 
-
-h1,h2,h3,h4,p {
-    line-height: 1.4;
+h1 {
+  color: pink;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* Media Queries */
