@@ -25,10 +25,6 @@ text-align: center;
 padding: 0px 0;
 }
 
-.box{
-position: absolute;
-}
-
 .logo {
   max-width: 250px;
   float: center;
@@ -47,6 +43,7 @@ position: absolute;
 	padding: 10px;
 	color: #000;
 	display: block;
+  text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -62,9 +59,12 @@ position: absolute;
 }
 
 /* HERO section style starts here */
-.inicio {
-  text-align: left;
-  margin-top: 20px;
+main {
+  padding: 306px 30px 0;
+}
+
+footer {
+  padding: 30px 30px 0;
 }
 
 h1 {
@@ -76,19 +76,10 @@ h1 {
   font-weight: 400;
 }
 
-main {
-  padding: 306px 30px 0;
-}
-
-footer {
-  padding: 30px 30px 0;
-}
-
 /* Change the link color to #6e6e6e on hover */
 ul {
-display:flex;
-justify-content:center;
-width:100%;
+display: flex;
+justify-content: center;
 }
 
 li a:hover {
@@ -98,6 +89,7 @@ li a:hover {
 .hero span {
   display: block;
 }
+
 img {
   width: 100%;
 }
@@ -123,7 +115,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  color: green;
+  color: Purple;
 }
 
 h4 {
@@ -142,8 +134,6 @@ a:focus {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-.button {
-}
 .btn-default {
   border-radius: 3px;
   text-decoration: underline;
@@ -155,14 +145,9 @@ a:focus {
   background-color: green;
 }
 
-.container{
+.container {
   padding-top: 0px;
 }
-
-.inicio .title {
-  margin-top: 30px;
-}
-
 
 .row {
   margin: 10px 0; /* 25px top and bottom, 0 left and right */
@@ -172,14 +157,6 @@ a:focus {
   content: "";
   clear: both;
   display: table;
-}
-
-#work .row {
-  padding-bottom: -2px;
-}
-
-#id {
-  margin: 20px;
 }
 
 [class*="col-"] {
@@ -192,22 +169,30 @@ a:focus {
   float: left;
 }
 
-}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
   main {
     padding: 320px 30px 0;
   }
-
+  h1 {
+    font-size: 4.25em;
+  }
+  h3 {
+    font-size: 3.25em;
+  }
   .col-md-6 {
     width: 50%;
     float: left;
   }
+  .paragraph-style {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+
 }
-
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
