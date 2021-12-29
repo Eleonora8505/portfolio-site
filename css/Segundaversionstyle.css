@@ -1,20 +1,234 @@
-
-
- header {
-  background-color: green;
-  width: 100%;
-  position: absolute;
-  display: inline-block;
-  top: 0
-  left: 0;
-  padding: 0;
+/*
+Colors used:
+Background Color (Purple): #E7E0EA
+*/
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-.presentation h1 {
-  background-color: black;
-  position: relative;
+body {
+  background-color: #e7e0ea;
+  font-family: "Lato", sans-serif;
+  font-size: 14px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+}
+
+header {
+ position: relative;
+ margin: 0 auto;
+ background-color: white;
+ width: 100%;
+ height: auto;
+}
+
+.box{
+position: absolute;
+}
+
+.logo {
+  max-width: 250px;
+  float: center;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.menu {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu a {
+	padding: 10px;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: 16px;
+}
+
+.menu a:hover {
+	background: #000;
+	color: #fff;
+}
+
+/* HERO section style starts here */
+.inicio {
+  text-align: left;
+  margin-top: 20px;
 }
 
 h1 {
-  color: pink;
+  text-align: center;
+}
+
+.paragraph-style {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+main {
+  padding: 30px 30px 0;
+}
+
+footer {
+  padding: 30px 30px 0;
+}
+
+/* Change the link color to #6e6e6e on hover */
+ul {
+display:flex;
+justify-content:center;
+width:100%;
+}
+li a:hover {
+  background-color: #6e6e6e;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  margin: 0;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+  color: green;
+}
+h4 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+a {
+  color: #271b81;
+  text-decoration: none; /* No underlining */
+}
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+.button {
+}
+.btn-default {
+  border-radius: 3px;
+  text-decoration: underline;
+  color: black;
+}
+
+.button:active {
+  color: black;
+  background-color: green;
+}
+.container{
+  padding-top: 0px;
+}
+
+.inicio .title {
+  margin-top: 30px;
+}
+
+header {
+  position:fixed;
+  top:0;
+
+}
+
+/* ==============================
+Small devices (320px and larger)
+================================= */
+@media only screen and (max-width: 639px) {
+  body {
+    font-size: 16px
+  }
+    header {
+    position: inherit;
+    width: 100%;
+    align-items: center;
+    background-color: none;
+    text-align: center;
+    padding: 0px 0;
+}
+ul {
+  display: contents;
+}
+
+.hero span {
+  display: block;
+}
+
+.row {
+  margin: 10px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#work .row {
+  padding-bottom: -2px;
+}
+
+#id {
+  margin: 20px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.col-md-6 {
+  width: 50%;
+  float: left;
+}
+
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  main {
+    padding: 320px 30px 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
