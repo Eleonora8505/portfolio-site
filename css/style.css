@@ -196,6 +196,11 @@ Medium devices (640px and larger)
   main {
     padding: 320px 30px 0;
   }
+
+  .menu a {
+    font-size: 20px;
+  }
+
   h1 {
     font-size: 4.25em;
   }
