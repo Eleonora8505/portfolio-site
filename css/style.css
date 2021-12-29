@@ -17,11 +17,12 @@ body {
 }
 
 header {
- position: relative;
- margin: 0 auto;
- background-color: white;
- width: 100%;
- height: auto;
+position: fixed;
+width: 100%;
+align-items: center;
+background-color: white;
+text-align: center;
+padding: 0px 0;
 }
 
 .box{
@@ -76,7 +77,7 @@ h1 {
 }
 
 main {
-  padding: 30px 30px 0;
+  padding: 280px 30px 0;
 }
 
 footer {
@@ -89,10 +90,18 @@ display:flex;
 justify-content:center;
 width:100%;
 }
+
 li a:hover {
   background-color: #6e6e6e;
 }
 
+ul {
+  display: contents;
+}
+
+.hero span {
+  display: block;
+}
 img {
   width: 100%;
 }
@@ -102,7 +111,6 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
-
 }
 
 h1 {
@@ -110,15 +118,18 @@ h1 {
   font-weight: 700;
   margin: 0;
 }
+
 h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
+
 h3 {
   font-size: 1.75em;
   font-weight: 400;
   color: green;
 }
+
 h4 {
   font-size: 1.25em;
   font-weight: 400;
@@ -128,6 +139,7 @@ a {
   color: #271b81;
   text-decoration: none; /* No underlining */
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
@@ -146,6 +158,7 @@ a:focus {
   color: black;
   background-color: green;
 }
+
 .container{
   padding-top: 0px;
 }
@@ -154,34 +167,6 @@ a:focus {
   margin-top: 30px;
 }
 
-header {
-  position:fixed;
-  top:0;
-
-}
-
-/* ==============================
-Small devices (320px and larger)
-================================= */
-@media only screen and (max-width: 639px) {
-  body {
-    font-size: 16px
-  }
-    header {
-    position: inherit;
-    width: 100%;
-    align-items: center;
-    background-color: none;
-    text-align: center;
-    padding: 0px 0;
-}
-ul {
-  display: contents;
-}
-
-.hero span {
-  display: block;
-}
 
 .row {
   margin: 10px 0; /* 25px top and bottom, 0 left and right */
@@ -212,7 +197,6 @@ ul {
 }
 
 }
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
