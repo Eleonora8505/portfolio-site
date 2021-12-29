@@ -79,7 +79,7 @@ h1 {
 /* Change the link color to #6e6e6e on hover */
 ul {
 display: flex;
-justify-content: center;
+justify-content: space-around;
 }
 
 li a:hover {
@@ -134,15 +134,21 @@ a:focus {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-.btn-default {
+.button {
+  display: inline-block;
+  background-color: #cc94e9;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
   border-radius: 3px;
-  text-decoration: underline;
-  color: black;
+  border-bottom: 2px solid #674e76;
+  transition: 0.2s opacity;
 }
 
-.button:active {
-  color: black;
-  background-color: green;
+.button:hover {
+  opacity: 0.8;
 }
 
 .container {
@@ -191,15 +197,18 @@ Medium devices (640px and larger)
     font-size: 1.75em;
     font-weight: 400;
   }
-
+  .button {
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 5px;
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+
+  .col-md-7 {
+    width: 58.33%;
+    float: left;
+  }
 }
