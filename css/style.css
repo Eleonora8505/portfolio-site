@@ -190,6 +190,20 @@ a:focus {
   animation-timing-function: linear;
 }
 
+/*MEXICO MAP ANIMATIONm*/
+@keyframes transform {
+  from {transform: translate(0,0);}
+  to {transform: translate(300px,300px);}
+}
+
+.map {
+  animation-duration: 10s;
+  animation-name: transform;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
